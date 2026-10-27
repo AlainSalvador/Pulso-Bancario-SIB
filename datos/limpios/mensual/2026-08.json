@@ -1,0 +1,885 @@
+{
+ "fuente": "BM-Bancos-Agosto-2026-Version-3.pdf",
+ "corte": "2026-08",
+ "resumen": {
+  "liquidez_inmediata": 16.7,
+  "liquidez_mediata": 45.8,
+  "patrimonio_activos": 10.4,
+  "roe": 18.9,
+  "roa": 1.9,
+  "cartera_vencida": 2.3
+ },
+ "balance": {
+  "cortes": [
+   "2023-12",
+   "2024-12",
+   "2025-08",
+   "2025-12",
+   "2026-08"
+  ],
+  "unidad": "miles_q",
+  "activo": {
+   "disponibilidades": [
+    76765027.0,
+    80023997.0,
+    81513011.0,
+    92825872.0,
+    86785282.0
+   ],
+   "inversiones": [
+    130347551.0,
+    133515570.0,
+    153779579.0,
+    162497366.0,
+    185870641.0
+   ],
+   "cartera_neta": [
+    300432443.0,
+    336235915.0,
+    359649641.0,
+    364453566.0,
+    383853294.0
+   ],
+   "otras_inversiones": [
+    2151437.0,
+    2257752.0,
+    2429546.0,
+    2007837.0,
+    1903944.0
+   ],
+   "inmuebles_muebles": [
+    5498057.0,
+    5949589.0,
+    6307244.0,
+    6754186.0,
+    7246258.0
+   ],
+   "cargos_diferidos": [
+    4879412.0,
+    4872296.0,
+    4435470.0,
+    4738067.0,
+    4349872.0
+   ],
+   "otros_activos": [
+    8149532.0,
+    9056875.0,
+    10141203.0,
+    9073086.0,
+    9626047.0
+   ],
+   "total_activo": [
+    528223459.0,
+    571911994.0,
+    618255694.0,
+    642349979.0,
+    679635335.0
+   ]
+  },
+  "pasivo": {
+   "obligaciones_depositarias": [
+    402973739.0,
+    434352509.0,
+    467760124.0,
+    483335621.0,
+    510661400.0
+   ],
+   "creditos_obtenidos": [
+    47927987.0,
+    53239041.0,
+    57701041.0,
+    62640802.0,
+    60547093.0
+   ],
+   "obligaciones_financieras": [
+    201881.0,
+    191097.0,
+    2368158.0,
+    4080561.0,
+    6086315.0
+   ],
+   "provisiones": [
+    1985626.0,
+    2361743.0,
+    2666794.0,
+    2711608.0,
+    3122086.0
+   ],
+   "creditos_diferidos": [
+    1492691.0,
+    1869384.0,
+    1997365.0,
+    2172753.0,
+    2342373.0
+   ],
+   "otros_pasivos": [
+    19890112.0,
+    20663009.0,
+    23372512.0,
+    21678104.0,
+    26398349.0
+   ],
+   "capital_contable": [
+    53751423.0,
+    59235212.0,
+    62389699.0,
+    65730529.0,
+    70477718.0
+   ],
+   "total_pasivo_capital": [
+    528223459.0,
+    571911994.0,
+    618255694.0,
+    642349979.0,
+    679635335.0
+   ]
+  }
+ },
+ "resultados": {
+  "cortes": [
+   "2022-08",
+   "2023-08",
+   "2024-08",
+   "2025-08",
+   "2026-08"
+  ],
+  "unidad": "miles_q",
+  "acumulado": "enero a mes de corte",
+  "productos_financieros": [
+   22880550.0,
+   27642801.0,
+   32498448.0,
+   36580159.0,
+   39514838.0
+  ],
+  "productos_servicios": [
+   2952756.0,
+   3204373.0,
+   3197265.0,
+   3440272.0,
+   4059161.0
+  ],
+  "productos_extraordinarios": [
+   989483.0,
+   986052.0,
+   1088649.0,
+   1210435.0,
+   1357675.0
+  ],
+  "otros_productos": [
+   1904247.0,
+   2014690.0,
+   2435561.0,
+   2142242.0,
+   2359322.0
+  ],
+  "gastos_financieros": [
+   8431269.0,
+   10643239.0,
+   13450773.0,
+   15449970.0,
+   15613136.0
+  ],
+  "otros_gastos": [
+   3797687.0,
+   4583081.0,
+   5760673.0,
+   7350039.0,
+   8028224.0
+  ],
+  "gastos_administracion": [
+   10982375.0,
+   12566826.0,
+   13542898.0,
+   14479581.0,
+   16221077.0
+  ],
+  "resultado": [
+   5515705.0,
+   6054769.0,
+   6465578.0,
+   6093519.0,
+   7428557.0
+  ]
+ },
+ "capital_encaje": {
+  "patrimonio": [
+   {
+    "mes": "2025-09",
+    "computable": 64984267.0,
+    "requerido": 43896996.0,
+    "posicion": 21087271.0,
+    "iac": 15.1
+   },
+   {
+    "mes": "2025-10",
+    "computable": 65632109.0,
+    "requerido": 43871963.0,
+    "posicion": 21760145.0,
+    "iac": 15.3
+   },
+   {
+    "mes": "2025-11",
+    "computable": 66186609.0,
+    "requerido": 44278256.0,
+    "posicion": 21908354.0,
+    "iac": 15.3
+   },
+   {
+    "mes": "2025-12",
+    "computable": 66794795.0,
+    "requerido": 44062228.0,
+    "posicion": 22732567.0,
+    "iac": 15.5
+   },
+   {
+    "mes": "2026-01",
+    "computable": 70249972.0,
+    "requerido": 44541648.0,
+    "posicion": 25708324.0,
+    "iac": 16.1
+   },
+   {
+    "mes": "2026-02",
+    "computable": 70685894.0,
+    "requerido": 44922034.0,
+    "posicion": 25763860.0,
+    "iac": 16.1
+   },
+   {
+    "mes": "2026-03",
+    "computable": 69633064.0,
+    "requerido": 45223252.0,
+    "posicion": 24409812.0,
+    "iac": 15.7
+   },
+   {
+    "mes": "2026-04",
+    "computable": 70424723.0,
+    "requerido": 45581108.0,
+    "posicion": 24843615.0,
+    "iac": 15.8
+   },
+   {
+    "mes": "2026-05",
+    "computable": 71142586.0,
+    "requerido": 45817792.0,
+    "posicion": 25324795.0,
+    "iac": 15.8
+   },
+   {
+    "mes": "2026-06",
+    "computable": 71870112.0,
+    "requerido": 45754495.0,
+    "posicion": 26115617.0,
+    "iac": 16.0
+   },
+   {
+    "mes": "2026-07",
+    "computable": 72574870.0,
+    "requerido": 46003787.0,
+    "posicion": 26571084.0,
+    "iac": 16.1
+   },
+   {
+    "mes": "2026-08",
+    "computable": 74665148.0,
+    "requerido": 46755884.0,
+    "posicion": 27909262.0,
+    "iac": 16.3
+   }
+  ],
+  "encaje_mn": [
+   {
+    "mes": "2025-09",
+    "obligaciones_encajables": 394699659.0,
+    "computable": 57984463.0,
+    "requerido": 57626150.0,
+    "posicion": 358313.0
+   },
+   {
+    "mes": "2025-10",
+    "obligaciones_encajables": 397429975.0,
+    "computable": 58422950.0,
+    "requerido": 58024776.0,
+    "posicion": 398174.0
+   },
+   {
+    "mes": "2025-11",
+    "obligaciones_encajables": 399364978.0,
+    "computable": 58849427.0,
+    "requerido": 58307287.0,
+    "posicion": 542140.0
+   },
+   {
+    "mes": "2025-12",
+    "obligaciones_encajables": 408206287.0,
+    "computable": 60259973.0,
+    "requerido": 59598118.0,
+    "posicion": 661856.0
+   },
+   {
+    "mes": "2026-01",
+    "obligaciones_encajables": 410227450.0,
+    "computable": 60228613.0,
+    "requerido": 59893208.0,
+    "posicion": 335406.0
+   },
+   {
+    "mes": "2026-02",
+    "obligaciones_encajables": 412436697.0,
+    "computable": 60646187.0,
+    "requerido": 60215758.0,
+    "posicion": 430429.0
+   },
+   {
+    "mes": "2026-03",
+    "obligaciones_encajables": 415834999.0,
+    "computable": 61121730.0,
+    "requerido": 60711910.0,
+    "posicion": 409820.0
+   },
+   {
+    "mes": "2026-04",
+    "obligaciones_encajables": 418791995.0,
+    "computable": 61565211.0,
+    "requerido": 61143631.0,
+    "posicion": 421579.0
+   },
+   {
+    "mes": "2026-05",
+    "obligaciones_encajables": 422325116.0,
+    "computable": 62213056.0,
+    "requerido": 61659467.0,
+    "posicion": 553589.0
+   },
+   {
+    "mes": "2026-06",
+    "obligaciones_encajables": 426450103.0,
+    "computable": 62731667.0,
+    "requerido": 62261715.0,
+    "posicion": 469952.0
+   },
+   {
+    "mes": "2026-07",
+    "obligaciones_encajables": 431021641.0,
+    "computable": 63236398.0,
+    "requerido": 62929160.0,
+    "posicion": 307239.0
+   },
+   {
+    "mes": "2026-08",
+    "obligaciones_encajables": 432696148.0,
+    "computable": 63446387.0,
+    "requerido": 63173638.0,
+    "posicion": 272750.0
+   }
+  ],
+  "encaje_me": [
+   {
+    "mes": "2025-09",
+    "obligaciones_encajables": 9817766.0,
+    "computable": 1552878.0,
+    "requerido": 1433394.0,
+    "posicion": 119484.0
+   },
+   {
+    "mes": "2025-10",
+    "obligaciones_encajables": 9826072.0,
+    "computable": 1531744.0,
+    "requerido": 1434607.0,
+    "posicion": 97137.0
+   },
+   {
+    "mes": "2025-11",
+    "obligaciones_encajables": 9799240.0,
+    "computable": 1531478.0,
+    "requerido": 1430689.0,
+    "posicion": 100789.0
+   },
+   {
+    "mes": "2025-12",
+    "obligaciones_encajables": 9771099.0,
+    "computable": 1551157.0,
+    "requerido": 1426580.0,
+    "posicion": 124577.0
+   },
+   {
+    "mes": "2026-01",
+    "obligaciones_encajables": 9784545.0,
+    "computable": 1540632.0,
+    "requerido": 1428544.0,
+    "posicion": 112088.0
+   },
+   {
+    "mes": "2026-02",
+    "obligaciones_encajables": 9859646.0,
+    "computable": 1552353.0,
+    "requerido": 1439508.0,
+    "posicion": 112845.0
+   },
+   {
+    "mes": "2026-03",
+    "obligaciones_encajables": 9950622.0,
+    "computable": 1646882.0,
+    "requerido": 1452791.0,
+    "posicion": 194092.0
+   },
+   {
+    "mes": "2026-04",
+    "obligaciones_encajables": 9972027.0,
+    "computable": 1590904.0,
+    "requerido": 1455916.0,
+    "posicion": 134988.0
+   },
+   {
+    "mes": "2026-05",
+    "obligaciones_encajables": 9908439.0,
+    "computable": 1574987.0,
+    "requerido": 1446632.0,
+    "posicion": 128354.0
+   },
+   {
+    "mes": "2026-06",
+    "obligaciones_encajables": 9865926.0,
+    "computable": 1544454.0,
+    "requerido": 1440425.0,
+    "posicion": 104029.0
+   },
+   {
+    "mes": "2026-07",
+    "obligaciones_encajables": 9771702.0,
+    "computable": 1501889.0,
+    "requerido": 1426668.0,
+    "posicion": 75221.0
+   },
+   {
+    "mes": "2026-08",
+    "obligaciones_encajables": 9767598.0,
+    "computable": 1490305.0,
+    "requerido": 1426069.0,
+    "posicion": 64236.0
+   }
+  ],
+  "unidades": {
+   "patrimonio": "miles_q",
+   "encaje_mn": "miles_q",
+   "encaje_me": "miles_usd",
+   "iac": "%"
+  }
+ },
+ "cartera_segmento": {
+  "unidad": "miles_q",
+  "segmentos": {
+   "empresarial": {
+    "cantidad_mn": 86219.0,
+    "saldo_mn": 96190586.0,
+    "cantidad_me": 53654.0,
+    "saldo_me": 101834069.0,
+    "cantidad": 139873.0,
+    "saldo": 198024655.0,
+    "participacion": 50.0
+   },
+   "productivo": {
+    "cantidad_mn": 326560.0,
+    "saldo_mn": 27091353.0,
+    "cantidad_me": 27206.0,
+    "saldo_me": 2426125.0,
+    "cantidad": 353766.0,
+    "saldo": 29517478.0,
+    "participacion": 7.5
+   },
+   "hipotecario": {
+    "cantidad_mn": 43680.0,
+    "saldo_mn": 17915842.0,
+    "cantidad_me": 3141.0,
+    "saldo_me": 3045988.0,
+    "cantidad": 46821.0,
+    "saldo": 20961831.0,
+    "participacion": 5.3
+   },
+   "consumo": {
+    "cantidad_mn": 6230232.0,
+    "saldo_mn": 143214546.0,
+    "cantidad_me": 2649412.0,
+    "saldo_me": 4044547.0,
+    "cantidad": 8879644.0,
+    "saldo": 147259093.0,
+    "participacion": 37.2
+   },
+   "total": {
+    "cantidad_mn": 6686691.0,
+    "saldo_mn": 284412328.0,
+    "cantidad_me": 2733413.0,
+    "saldo_me": 111350730.0,
+    "cantidad": 9420104.0,
+    "saldo": 395763057.0,
+    "participacion": 100.0
+   }
+  }
+ },
+ "mora_segmento": {
+  "cortes": [
+   "2023-12",
+   "2024-12",
+   "2025-08",
+   "2025-12",
+   "2026-08"
+  ],
+  "mn": {
+   "empresarial": [
+    1.3,
+    1.3,
+    1.4,
+    1.3,
+    1.3
+   ],
+   "productivo": [
+    3.4,
+    3.7,
+    3.1,
+    2.7,
+    2.5
+   ],
+   "hipotecario": [
+    1.4,
+    1.9,
+    2.0,
+    2.0,
+    2.0
+   ],
+   "consumo": [
+    2.6,
+    4.1,
+    3.9,
+    4.0,
+    3.8
+   ]
+  },
+  "me": {
+   "empresarial": [
+    0.8,
+    1.3,
+    1.5,
+    1.2,
+    1.2
+   ],
+   "productivo": [
+    2.0,
+    2.6,
+    2.1,
+    2.4,
+    2.1
+   ],
+   "hipotecario": [
+    1.8,
+    2.3,
+    2.3,
+    2.5,
+    2.8
+   ],
+   "consumo": [
+    1.4,
+    1.5,
+    1.7,
+    1.6,
+    1.4
+   ]
+  }
+ },
+ "cartera_actividad": {
+  "unidad": "miles_q",
+  "actividades": [
+   {
+    "actividad": "CONSUMOS PERSONALES",
+    "cantidad": 2979674.0,
+    "saldo": 102866263.0,
+    "participacion": 26.0
+   },
+   {
+    "actividad": "VEHÍCULOS",
+    "cantidad": 163865.0,
+    "saldo": 9444312.0,
+    "participacion": 2.4
+   },
+   {
+    "actividad": "TARJETAS DE CRÉDITO",
+    "cantidad": 5730460.0,
+    "saldo": 35044875.0,
+    "participacion": 8.9
+   },
+   {
+    "actividad": "CONSUMO, VEHÍCULOS Y TARJETAS DE CRÉDITO",
+    "cantidad": 8873999.0,
+    "saldo": 147355451.0,
+    "participacion": 37.2
+   },
+   {
+    "actividad": "Industrias manufactureras",
+    "cantidad": 39730.0,
+    "saldo": 45268509.0,
+    "participacion": 11.4
+   },
+   {
+    "actividad": "Comercio al por mayor y al por menor; Mantenimiento y reparación de vehículos automotores y motocicletas",
+    "cantidad": 269233.0,
+    "saldo": 41056454.0,
+    "participacion": 10.4
+   },
+   {
+    "actividad": "Actividades inmobiliarias",
+    "cantidad": 6341.0,
+    "saldo": 36436020.0,
+    "participacion": 9.2
+   },
+   {
+    "actividad": "Vivienda",
+    "cantidad": 57178.0,
+    "saldo": 21211801.0,
+    "participacion": 5.4
+   },
+   {
+    "actividad": "Actividades financieras y de seguros",
+    "cantidad": 4640.0,
+    "saldo": 18556366.0,
+    "participacion": 4.7
+   },
+   {
+    "actividad": "Suministro de electricidad, gas, vapor y aire acondicionado",
+    "cantidad": 1281.0,
+    "saldo": 18451465.0,
+    "participacion": 4.7
+   },
+   {
+    "actividad": "Construcción",
+    "cantidad": 15413.0,
+    "saldo": 17574279.0,
+    "participacion": 4.4
+   },
+   {
+    "actividad": "Agricultura, ganadería, silvicultura y pesca",
+    "cantidad": 44067.0,
+    "saldo": 17092001.0,
+    "participacion": 4.3
+   },
+   {
+    "actividad": "Información y comunicaciones",
+    "cantidad": 5015.0,
+    "saldo": 7872340.0,
+    "participacion": 2.0
+   },
+   {
+    "actividad": "Otras actividades económicas 1/",
+    "cantidad": 103207.0,
+    "saldo": 24888373.0,
+    "participacion": 6.3
+   }
+  ]
+ },
+ "tasas": {
+  "cortes": [
+   "2023-12",
+   "2024-12",
+   "2025-08",
+   "2025-12",
+   "2026-08"
+  ],
+  "activa_total": {
+   "mn": [
+    16.6,
+    12.7,
+    12.9,
+    13.0,
+    13.1
+   ],
+   "me": [
+    7.5,
+    7.3,
+    7.4,
+    7.3,
+    7.2
+   ]
+  },
+  "activa_segmento": {
+   "mn": {
+    "empresarial": [
+     7.0,
+     7.8,
+     7.8,
+     7.8,
+     7.8
+    ],
+    "productivo": [
+     14.1,
+     14.5,
+     14.9,
+     15.1,
+     15.4
+    ],
+    "hipotecario": [
+     8.8,
+     8.7,
+     8.8,
+     8.8,
+     8.8
+    ],
+    "consumo": [
+     26.4,
+     28.2,
+     18.3,
+     18.4,
+     18.3
+    ]
+   },
+   "me": {
+    "empresarial": [
+     6.7,
+     7.3,
+     7.3,
+     7.2,
+     7.1
+    ],
+    "productivo": [
+     7.3,
+     7.9,
+     8.1,
+     8.2,
+     8.0
+    ],
+    "hipotecario": [
+     7.3,
+     7.5,
+     7.6,
+     7.6,
+     7.6
+    ],
+    "consumo": [
+     27.0,
+     26.3,
+     7.9,
+     7.9,
+     7.8
+    ]
+   }
+  },
+  "pasiva": {
+   "mn": {
+    "monetarios": [
+     0.9,
+     0.9,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "ahorro": [
+     2.0,
+     2.5,
+     2.5,
+     2.5,
+     2.5
+    ],
+    "plazo": [
+     5.8,
+     6.5,
+     6.6,
+     6.5,
+     6.2
+    ]
+   },
+   "me": {
+    "monetarios": [
+     0.8,
+     0.9,
+     0.9,
+     0.9,
+     0.9
+    ],
+    "ahorro": [
+     1.9,
+     2.3,
+     2.4,
+     2.3,
+     2.2
+    ],
+    "plazo": [
+     4.4,
+     5.1,
+     5.0,
+     5.0,
+     4.7
+    ]
+   }
+  },
+  "nota": "Desde enero 2025 las tasas activas excluyen las líneas de tarjeta de crédito (Ley de Tarjetas de Crédito)."
+ },
+ "captaciones": {
+  "mn": {
+   "monetarios": [
+    114148.4,
+    119003.0,
+    123872.8,
+    133399.6,
+    138578.5
+   ],
+   "ahorro": [
+    91387.7,
+    101615.5,
+    117699.9,
+    124236.7,
+    137341.8
+   ],
+   "plazo": [
+    128052.5,
+    141885.9,
+    151233.3,
+    150618.2,
+    158592.5
+   ],
+   "otras": [
+    1382.2,
+    1436.9,
+    1912.9,
+    2455.7,
+    4208.0
+   ]
+  },
+  "cortes": [
+   "2023-12",
+   "2024-12",
+   "2025-08",
+   "2025-12",
+   "2026-08"
+  ],
+  "me": {
+   "monetarios": [
+    28497.8,
+    29236.3,
+    29908.8,
+    30353.1,
+    31429.2
+   ],
+   "ahorro": [
+    13899.1,
+    14470.9,
+    15441.8,
+    15801.6,
+    16748.2
+   ],
+   "plazo": [
+    25691.3,
+    26809.0,
+    28047.1,
+    27482.7,
+    26201.4
+   ],
+   "otras": [
+    4961.9,
+    4895.9,
+    6678.5,
+    7814.2,
+    12446.1
+   ]
+  },
+  "unidad": "millones_q"
+ }
+}

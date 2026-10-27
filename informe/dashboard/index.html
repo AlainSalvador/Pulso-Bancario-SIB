@@ -1,0 +1,257 @@
+<title>Pulso Bancario GT</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Tablero del sistema bancario de Guatemala con datos de la Superintendencia de Bancos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="app.css">
+
+<div class="fondo" aria-hidden="true"></div>
+
+<header class="barra">
+  <div class="barra-in glass">
+    <a class="marca" href="#resumen" aria-label="Pulso Bancario GT, inicio">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M2 13h4l2.2-6 3.6 12 2.6-8 1.6 2H22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>Pulso Bancario <b>GT</b></span>
+    </a>
+    <nav class="nav" aria-label="Secciones">
+      <a href="#salud">Salud</a>
+      <a href="#credito">Crédito</a>
+      <a href="#depositos">Depósitos</a>
+      <a href="#bancos">Bancos</a>
+      <a href="#conclusiones">Conclusiones</a>
+      <a href="#fuentes">Fuentes</a>
+    </nav>
+    <div class="acciones">
+      <span class="modo" id="modo" hidden></span>
+      <button class="btn btn-ghost" id="btn-editar" type="button" hidden aria-pressed="false">Editar</button>
+      <button class="btn btn-primario" id="btn-guardar" type="button" hidden>Guardar</button>
+    </div>
+  </div>
+</header>
+
+<main class="pagina">
+
+  <section class="hero" id="resumen" aria-labelledby="t-hero">
+    <p class="ceja">Sistema bancario de Guatemala · Superintendencia de Bancos</p>
+    <h1 id="t-hero">El sistema bancario, <span class="marca-tinta">en números</span></h1>
+    <p class="lede">Los 19 bancos del país, cinco años de estados financieros y el corte más reciente del sistema. Cada cifra sale de los boletines de la SIB. Los indicadores por banco se calculan aquí con la misma fórmula para todos.</p>
+    <dl class="meta" id="meta-cortes">
+      <div><dt>Corte del sistema</dt><dd id="m-corte">—</dd></div>
+      <div><dt>Corte por banco</dt><dd id="m-corte-banco">—</dd></div>
+      <div><dt>Datos generados</dt><dd id="m-generado">—</dd></div>
+    </dl>
+    <div class="kpis" id="kpis" aria-live="polite">
+      <p class="cargando">Cargando datos de la SIB…</p>
+    </div>
+  </section>
+
+  <section class="bloque glass" id="salud" aria-labelledby="t-salud">
+    <header class="bloque-cab">
+      <p class="ceja" id="salud-ceja">Indicadores oficiales SIB</p>
+      <h2 id="t-salud">Salud del sistema</h2>
+      <p class="sub">Indicadores que publica la SIB al cierre de cada año y en el último corte. La etiqueta compara cada valor con criterios del tablero (ver Método), no es una calificación regulatoria.</p>
+    </header>
+    <div class="senales" id="senales"></div>
+    <div class="fila-2">
+      <article class="tarjeta" id="card-iac">
+        <header class="tarjeta-cab">
+          <div><h3>Adecuación de capital, mes a mes</h3><p class="nota-chica">Patrimonio computable entre activos ponderados por riesgo. Requisito legal: 10%.</p></div>
+          <button class="btn-tabla" type="button" data-tabla="card-iac">Tabla</button>
+        </header>
+        <div class="grafica" id="g-iac"></div>
+      </article>
+      <article class="tarjeta lecturas">
+        <header class="tarjeta-cab"><div><h3>Lo que dicen los números</h3><p class="nota-chica">Lecturas generadas a partir de los datos. Cambian solas cuando entra un corte nuevo.</p></div></header>
+        <ul class="hallazgos" id="hallazgos"></ul>
+      </article>
+    </div>
+    <div class="nota" data-nota="salud"></div>
+  </section>
+
+  <section class="bloque glass" id="credito" aria-labelledby="t-credito">
+    <header class="bloque-cab">
+      <p class="ceja" id="credito-ceja">Cartera de créditos del sistema</p>
+      <h2 id="t-credito">A quién le prestan los bancos</h2>
+      <p class="sub">Saldo de capital de la cartera al último corte, por actividad económica y por segmento, con su morosidad y su tasa de interés.</p>
+    </header>
+    <div class="fila-2">
+      <article class="tarjeta" id="card-actividad">
+        <header class="tarjeta-cab">
+          <div><h3>Destino del crédito</h3><p class="nota-chica">Participación en el saldo total de la cartera.</p></div>
+          <button class="btn-tabla" type="button" data-tabla="card-actividad">Tabla</button>
+        </header>
+        <div class="grafica" id="g-actividad"></div>
+      </article>
+      <article class="tarjeta" id="card-segmento">
+        <header class="tarjeta-cab">
+          <div><h3>Segmentos y moneda</h3><p class="nota-chica">Saldo en quetzales y en dólares (expresado en quetzales).</p></div>
+          <button class="btn-tabla" type="button" data-tabla="card-segmento">Tabla</button>
+        </header>
+        <div class="grafica" id="g-segmento"></div>
+      </article>
+    </div>
+    <div class="fila-2">
+      <article class="tarjeta" id="card-mora">
+        <header class="tarjeta-cab">
+          <div><h3>Morosidad por segmento</h3><p class="nota-chica">Cartera vencida entre cartera total del segmento.</p></div>
+          <button class="btn-tabla" type="button" data-tabla="card-mora">Tabla</button>
+        </header>
+        <div class="multiples" id="g-mora"></div>
+      </article>
+      <article class="tarjeta" id="card-tasas">
+        <header class="tarjeta-cab">
+          <div><h3>Tasa activa por segmento</h3><p class="nota-chica">Promedio ponderado, moneda nacional.</p></div>
+          <button class="btn-tabla" type="button" data-tabla="card-tasas">Tabla</button>
+        </header>
+        <div class="grafica" id="g-tasas"></div>
+        <p class="aviso" id="aviso-tasas"></p>
+      </article>
+    </div>
+    <div class="nota" data-nota="credito"></div>
+  </section>
+
+  <section class="bloque glass" id="depositos" aria-labelledby="t-depositos">
+    <header class="bloque-cab">
+      <p class="ceja" id="depositos-ceja">Captaciones del sistema</p>
+      <h2 id="t-depositos">De dónde sale el dinero</h2>
+      <p class="sub">Lo que el público deposita en los bancos, por tipo de cuenta y por moneda, y lo que le pagan por hacerlo.</p>
+    </header>
+    <div class="fila-2">
+      <article class="tarjeta" id="card-captaciones">
+        <header class="tarjeta-cab">
+          <div><h3>Captaciones por tipo</h3><p class="nota-chica">Millardos de quetzales, moneda nacional y extranjera sumadas.</p></div>
+          <button class="btn-tabla" type="button" data-tabla="card-captaciones">Tabla</button>
+        </header>
+        <div class="grafica" id="g-captaciones"></div>
+      </article>
+      <article class="tarjeta" id="card-pasivas">
+        <header class="tarjeta-cab">
+          <div><h3>Lo que pagan los bancos</h3><p class="nota-chica">Tasa pasiva promedio ponderado, moneda nacional.</p></div>
+          <button class="btn-tabla" type="button" data-tabla="card-pasivas">Tabla</button>
+        </header>
+        <div class="grafica" id="g-pasivas"></div>
+        <div class="mini-kpis" id="dolarizacion"></div>
+      </article>
+    </div>
+    <div class="nota" data-nota="depositos"></div>
+  </section>
+
+  <section class="bloque glass" id="bancos" aria-labelledby="t-bancos">
+    <header class="bloque-cab bloque-cab-fila">
+      <div>
+        <p class="ceja">Fichas por entidad · Boletín Anual</p>
+        <h2 id="t-bancos">Los 19 bancos</h2>
+        <p class="sub">Indicadores calculados con saldos de cierre del periodo. Selecciona un banco para ver su detalle.</p>
+      </div>
+      <div class="segmentado" id="sel-periodo" role="radiogroup" aria-label="Periodo"></div>
+    </header>
+    <div class="tabla-envoltura">
+      <table class="tabla-bancos" id="tabla-bancos">
+        <thead></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="fila-2">
+      <article class="tarjeta" id="card-dispersion">
+        <header class="tarjeta-cab">
+          <div><h3>Crecimiento contra rentabilidad</h3><p class="nota-chica">Crecimiento anual de la cartera y ROE. El tamaño del punto es el activo. Las líneas marcan el sistema.</p></div>
+          <button class="btn-tabla" type="button" data-tabla="card-dispersion">Tabla</button>
+        </header>
+        <div class="grafica" id="g-dispersion"></div>
+      </article>
+      <article class="tarjeta" id="card-concentracion">
+        <header class="tarjeta-cab">
+          <div><h3>Concentración del mercado</h3><p class="nota-chica">Participación en el activo total de los cinco bancos más grandes.</p></div>
+          <button class="btn-tabla" type="button" data-tabla="card-concentracion">Tabla</button>
+        </header>
+        <div class="grafica" id="g-concentracion"></div>
+        <div class="mini-kpis" id="hhi"></div>
+      </article>
+    </div>
+    <div class="nota" data-nota="bancos"></div>
+  </section>
+
+  <section class="bloque glass" id="conclusiones" aria-labelledby="t-conclusiones">
+    <header class="bloque-cab">
+      <p class="ceja">Análisis</p>
+      <h2 id="t-conclusiones">Conclusiones</h2>
+      <p class="sub">Lecturas propias sobre lo que muestran los datos, con la fecha en que se escribieron.</p>
+    </header>
+    <form class="form-conclusion" id="form-conclusion" hidden>
+      <div class="campo"><label for="conc-titulo">Título</label><input id="conc-titulo" maxlength="120" required placeholder="Ej.: El crédito al consumo sostiene el crecimiento, pero su mora triplica a la empresarial"></div>
+      <div class="campo"><label for="conc-texto">Desarrollo</label><textarea id="conc-texto" rows="4" required placeholder="Qué observas, con qué cifras lo respaldas y qué implica."></textarea></div>
+      <div class="campo campo-corto"><label for="conc-seccion">Tema</label>
+        <select id="conc-seccion"><option value="salud">Salud del sistema</option><option value="credito">Crédito</option><option value="depositos">Depósitos</option><option value="bancos">Bancos</option><option value="general" selected>General</option></select>
+      </div>
+      <div class="form-acciones"><button class="btn btn-primario" type="submit">Agregar conclusión</button></div>
+    </form>
+    <ol class="conclusiones" id="lista-conclusiones"></ol>
+  </section>
+
+  <section class="bloque glass" id="fuentes" aria-labelledby="t-fuentes">
+    <header class="bloque-cab">
+      <p class="ceja">Trazabilidad</p>
+      <h2 id="t-fuentes">Fuentes y método</h2>
+      <p class="sub">De dónde sale cada número, cómo se calcula y qué se ha corregido o agregado a mano.</p>
+    </header>
+    <div class="fila-2">
+      <article class="tarjeta">
+        <header class="tarjeta-cab"><div><h3>Fuentes</h3></div></header>
+        <ul class="fuentes" id="lista-fuentes"></ul>
+        <div class="descargas" id="descargas"></div>
+      </article>
+      <article class="tarjeta">
+        <header class="tarjeta-cab"><div><h3>Método</h3></div></header>
+        <dl class="metodo" id="metodo"></dl>
+      </article>
+    </div>
+
+    <article class="tarjeta editor-datos" id="editor-datos" hidden>
+      <header class="tarjeta-cab"><div><h3>Agregar datos de un periodo nuevo</h3><p class="nota-chica">Cuando la SIB publique un corte nuevo. Los campos vacíos se ignoran. Valores de cuentas en miles de quetzales; indicadores en porcentaje.</p></div></header>
+      <form id="form-periodo" class="form-periodo">
+        <div class="campos-fila">
+          <div class="campo"><label for="per-entidad">Entidad</label><select id="per-entidad"></select></div>
+          <div class="campo"><label for="per-mes">Periodo (fin de mes)</label><input id="per-mes" type="month" required></div>
+          <div class="campo campo-ancho"><label for="per-fuente">Fuente</label><input id="per-fuente" placeholder="Ej.: SIB, Boletín Mensual septiembre 2026"></div>
+        </div>
+        <div class="campos-grid" id="per-campos"></div>
+        <details class="pegar">
+          <summary>Pegar varias filas a la vez</summary>
+          <div class="campo"><label for="per-csv">Una fila por dato: <code>entidad,periodo,campo,valor</code></label>
+            <textarea id="per-csv" rows="5" placeholder="bi,2026-09,total_de_activo,201500000&#10;sistema,2026-09,roe,18.7"></textarea></div>
+          <p class="nota-chica" id="per-csv-estado"></p>
+        </details>
+        <div class="form-acciones"><button class="btn btn-primario" type="submit">Agregar al tablero</button><span class="estado-form" id="per-estado" role="status"></span></div>
+      </form>
+    </article>
+
+    <article class="tarjeta" id="card-cambios" hidden>
+      <header class="tarjeta-cab"><div><h3>Correcciones y datos agregados</h3><p class="nota-chica">Todo lo que no viene de los PDFs de la SIB queda registrado aquí.</p></div></header>
+      <ul class="cambios" id="lista-cambios"></ul>
+    </article>
+  </section>
+
+  <footer class="pie">
+    <p>Elaborado por <b>Alain Salvador</b> · <span class="mono">github.com/AlainSalvador</span></p>
+    <p>Datos: Superintendencia de Bancos de Guatemala. La SIB advierte que las cifras no están auditadas y provienen de la información contable de cada entidad.</p>
+  </footer>
+</main>
+
+<div class="velo" id="velo" hidden></div>
+<aside class="hoja glass" id="hoja" role="dialog" aria-modal="true" aria-labelledby="hoja-titulo" hidden>
+  <header class="hoja-cab">
+    <div>
+      <p class="ceja" id="hoja-ceja">Banco</p>
+      <h2 id="hoja-titulo">—</h2>
+    </div>
+    <button class="btn btn-ghost btn-cerrar" id="hoja-cerrar" type="button" aria-label="Cerrar detalle">Cerrar</button>
+  </header>
+  <div class="hoja-cuerpo" id="hoja-cuerpo"></div>
+</aside>
+
+<div class="tooltip glass" id="tooltip" role="tooltip" hidden></div>
+<div class="toast glass" id="toast" role="status" aria-live="polite" hidden></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="app.js"></script>

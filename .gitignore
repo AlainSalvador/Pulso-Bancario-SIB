@@ -1,0 +1,29 @@
+# Entorno virtual y dependencias
+.venv/
+env/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Datos personales y sensibles
+_cv/
+.env
+*.env
+*.key
+*.pem
+
+# Configuraciones de entorno e IDE
+.claude/
+.vscode/
+.idea/
+
+# Archivos crudos pesados (PDFs de ~18 MB descargables de la SIB)
+datos/crudos/*.pdf
+!datos/crudos/.gitkeep
+
+# Archivos temporales de sistema y Office
+~$*
+Thumbs.db
+Desktop.ini
+.DS_Store
